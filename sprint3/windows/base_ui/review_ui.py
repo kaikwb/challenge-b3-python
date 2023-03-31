@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'reviewgANmgH.ui'
+## Form generated from reading UI file 'reviewKqIWEz.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.4.3
 ##
@@ -86,10 +86,10 @@ class Ui_ReviewWindow(object):
 
         self.formLayout.setWidget(5, QFormLayout.LabelRole, self.contentLabel)
 
-        self.textEdit = QTextEdit(ReviewWindow)
-        self.textEdit.setObjectName(u"textEdit")
+        self.contentEdit = QTextEdit(ReviewWindow)
+        self.contentEdit.setObjectName(u"contentEdit")
 
-        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.textEdit)
+        self.formLayout.setWidget(5, QFormLayout.FieldRole, self.contentEdit)
 
 
         self.gridLayout.addLayout(self.formLayout, 0, 0, 1, 1)
