@@ -1,4 +1,4 @@
-import threading
+import multiprocessing
 
 from flask import Flask
 
@@ -23,6 +23,6 @@ def flask_thread(port):
 
 
 def start_mock_server():
-    thread = threading.Thread(target=flask_thread, args=[3000], daemon=True)
-    thread.start()
-    return thread
+    process = multiprocessing.Process(target=flask_thread, args=[3000], daemon=True)
+    process.start()
+    return process

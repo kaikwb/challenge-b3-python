@@ -1,8 +1,7 @@
 import json
+from uuid import uuid4
 
 from flask import Blueprint, request, Response
-
-from uuid import uuid4
 
 
 def create_mock(endpoint):
