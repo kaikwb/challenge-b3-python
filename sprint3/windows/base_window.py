@@ -70,6 +70,7 @@ class BaseWindow(QDialog):
         for i, (item_id, item) in enumerate(obj.items()):
             for j, attr in enumerate(ca_map.values()):
                 cell = QTableWidgetItem(item[attr])
+                cell.setFlags(Qt.ItemFlag.ItemIsEnabled)
                 if j == 0:
                     cell.setData(Qt.ItemDataRole.UserRole, (item_id, item))
                 table_widget.setItem(i, j, cell)
