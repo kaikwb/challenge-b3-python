@@ -38,7 +38,7 @@ class API(object):
             raise APIUpdateError(url, entity, str(e))
 
     def delete(self, entity_id: int | str | None, endpoint: str = "") -> None:
-        url = f"{self.__base_url}{endpoint}{'/' + entity_id}"
+        url = f"{self.__base_url}{endpoint}{'/' + str(entity_id)}"
         try:
             request = requests.delete(url)
             request.raise_for_status()

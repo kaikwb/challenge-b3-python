@@ -67,12 +67,12 @@ class BaseWindow(QDialog):
     @staticmethod
     def fill_content(table_widget, obj: dict, ca_map: dict) -> None:
         table_widget.setRowCount(len(obj))
-        for i, (item_id, item) in enumerate(obj.items()):
+        for i, item in enumerate(obj):
             for j, attr in enumerate(ca_map.values()):
                 cell = QTableWidgetItem(item[attr])
                 cell.setFlags(Qt.ItemFlag.ItemIsEnabled)
                 if j == 0:
-                    cell.setData(Qt.ItemDataRole.UserRole, (item_id, item))
+                    cell.setData(Qt.ItemDataRole.UserRole, (item["id"], item))
                 table_widget.setItem(i, j, cell)
 
     @Slot()

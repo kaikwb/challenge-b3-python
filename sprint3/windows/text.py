@@ -35,7 +35,7 @@ class TextWindow(BaseWindow):
         obj["title"] = self.ui.titleEdit.text()
         obj["author"] = self.ui.authorEdit.text()
         obj["source"] = self.ui.sourceEdit.text()
-        obj["link"] = self.ui.sourceEdit.text()
+        obj["link"] = self.ui.linkEdit.text()
         obj["content"] = self.ui.contentEdit.toPlainText()
 
         return obj

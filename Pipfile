@@ -7,6 +7,8 @@ name = "pypi"
 pyside6 = "*"
 requests = "*"
 flask = "*"
+sqlalchemy = "*"
+cx-oracle = "*"
 
 [dev-packages]
 

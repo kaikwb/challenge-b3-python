@@ -39,7 +39,7 @@ class ReviewWindow(BaseWindow):
         obj["author"] = self.ui.authorEdit.text()
         obj["company"] = self.ui.companyEdit.text()
         obj["source"] = self.ui.sourceEdit.text()
-        obj["link"] = self.ui.sourceEdit.text()
+        obj["link"] = self.ui.linkEdit.text()
         obj["content"] = self.ui.contentEdit.toPlainText()
 
         return obj

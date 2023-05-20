@@ -2,7 +2,8 @@ import multiprocessing
 
 from flask import Flask
 
-from .mock import create_mock
+from .mock import Mock
+from .models import Article, Review, Video
 
 app = Flask(__name__)
 
@@ -13,9 +14,9 @@ def main():
 
 
 def flask_thread(port):
-    texts = create_mock("texts")
-    videos = create_mock("videos")
-    reviews = create_mock("reviews")
+    texts = Mock.create_mock("texts", Article)
+    videos = Mock.create_mock("videos", Video)
+    reviews = Mock.create_mock("reviews", Review)
     app.register_blueprint(texts)
     app.register_blueprint(videos)
     app.register_blueprint(reviews)
