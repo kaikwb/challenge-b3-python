@@ -1,9 +1,9 @@
 import sys
 
 from PySide6.QtWidgets import QApplication
-from sprint3.windows.main_window import MainWindow
+from challenge.windows.main_window import MainWindow
 
-from sprint3.api.mock.mock_server import start_mock_server
+from challenge.api.mock.mock_server import start_mock_server
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)

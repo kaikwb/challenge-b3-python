@@ -1,9 +1,9 @@
 from PySide6.QtCore import Slot
 from PySide6.QtWidgets import QMainWindow
 
-from sprint3.windows.review import ReviewWindow
-from sprint3.windows.text import TextWindow
-from sprint3.windows.videos import VideosWindow
+from challenge.windows.review import ReviewWindow
+from challenge.windows.text import TextWindow
+from challenge.windows.videos import VideosWindow
 from .base_ui.main_ui import Ui_MainWindow
 
 

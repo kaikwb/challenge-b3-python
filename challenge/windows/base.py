@@ -4,8 +4,8 @@ from typing import Any
 from PySide6.QtCore import Slot, Qt
 from PySide6.QtWidgets import QDialog, QMessageBox, QTableWidgetItem
 
-from sprint3.api.api import API
-from sprint3.api.exceptions import APICreateError, APIUpdateError, APIDeleteError, APIGetError
+from challenge.api.api import API
+from challenge.api.exceptions import APICreateError, APIUpdateError, APIDeleteError, APIGetError
 from .base_ui import select_ui
 from .exceptions import MethodMustBeImplemented
 
